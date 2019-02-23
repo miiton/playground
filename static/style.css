@@ -2,14 +2,14 @@ html {
 	height: 100%;
 }
 body {
-	color: black;
+	color: #fff;
 	padding: 0;
 	margin: 0;
 	width: 100%;
 	height: 100%;
 }
 a {
-	color: #009;
+	color: #76E1FD;
 }
 #wrap,
 #about {
@@ -22,14 +22,14 @@ a {
 	left: 0;
 	right: 0;
 
-	background: #FFD;
+	background: #323232;
 }
 #about {
 	display: none;
 	z-index: 1;
 	padding: 10px 40px;
 	font-size: 16px;
-	font-family: sans-serif;
+	font-family: Cica, 'Ubuntu Mono', 'Noto Sans JP', monospace;
 	overflow: auto;
 }
 #about p {
@@ -44,12 +44,14 @@ a {
 #code, #output, pre, .lines {
 	/* The default monospace font on OS X is ugly, so specify Menlo
 	 * instead. On other systems the default monospace font will be used. */
-	font-family: Menlo, monospace;
-	font-size: 11pt;
+	font-family: Cica, 'Ubuntu Mono', 'Noto Sans JP', monospace;
+	font-size: 12pt;
+  tab-size: 4;
+
 }
 
 #code {
-	color: black;
+	color: #fff;
 	background: inherit;
 
 	width: 100%;
@@ -68,12 +70,14 @@ a {
 	left: 0;
 	right: 0;
 	padding: 8px;
+  background: #000;
+  color: #fff;
 }
 #output .system, #output .loading {
 	color: #999;
 }
 #output .stderr, #output .error {
-	color: #900;
+	color: #e74e4e;
 }
 #output pre {
 	margin: 0;
@@ -84,14 +88,14 @@ a {
 	right: 0;
 	top: 0;
 	height: 50px;
-	background-color: #E0EBF5;
+	background-color: #444f59;
 }
 #head {
 	float: left;
 	padding: 15px 10px;
 
 	font-size: 20px;
-	font-family: sans-serif;
+	font-family: Cica, 'Ubuntu Mono', 'Noto Sans JP', monospace;
 }
 #controls {
 	float: left;
@@ -110,7 +114,7 @@ input[type=button],
 	height: 30px;
 	border: 1px solid #375EAB;
 	font-size: 16px;
-	font-family: sans-serif;
+	font-family: Cica, 'Ubuntu Mono', 'Noto Sans JP', monospace;
 	background: #375EAB;
 	color: white;
 	position: static;
@@ -139,7 +143,7 @@ input[type=button],
 	height: 23px;
 }
 #embedLabel {
-	font-family: sans-serif;
+	font-family: Cica, 'Ubuntu Mono', 'Noto Sans JP', monospace;
 }
 .lines {
 	float: left;
@@ -152,7 +156,7 @@ input[type=button],
 }
 .lineerror {
 	color: red;
-	background: #FDD;
+	background: #900;
 }
 .exit {
 	color: lightgray;

@@ -204,6 +204,9 @@ COPY edit.html /app
 COPY static /app/static
 WORKDIR /app
 
+RUN go get github.com/Masterminds/squirrel \
+           github.com/miiton/kanaconv
+
 # Run tests
 RUN /app/playground test
 
